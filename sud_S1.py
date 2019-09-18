@@ -1,4 +1,5 @@
 #sud_S1.py
+#file in github
 import sys
 from os.path import basename
 
@@ -47,13 +48,12 @@ if __name__=='__main__' :
     print(fn)
 
     vsave=[[v[i][j] for j in range(9)]for i in range(9)]
-    rpt=7
+    rpt=7 #repeat counter for statistic of execution time
     
-    rc=0  
+    rc=0 #recursion counter (global) 
     t=perf_counter()
     solve(v,0,True)
     t=perf_counter()-t
-    #print('1st solve end.'+' '+'{:5.3f}'.format(t)+'s  rc='+'{:,d}'.format(rc))
     print(f'1st solve end. {t:5.3f} ncall= {rc:,d}\n') 
     tsum=0
     tav=0
