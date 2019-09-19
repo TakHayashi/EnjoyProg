@@ -54,7 +54,7 @@ if __name__=='__main__' :
     t=perf_counter()
     solve(v,0,True)
     t=perf_counter()-t
-    print(f'1st solve end. {t:5.3f} ncall= {rc:,d}\n') 
+    print(f'1st solve end. {t:5.3f}s ncall= {rc:,d}\n') 
     tsum=0
     tav=0
     tmin=9999
