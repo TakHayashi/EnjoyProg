@@ -1,4 +1,5 @@
 #sud_S1.py
+#usage: just run this script. require sudq_common.py in same dir.
 #file in github
 import sys
 from os.path import basename
