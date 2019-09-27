@@ -7,7 +7,7 @@
 
 ### To be uploaded soon.    
 
-### Licence  
+### License  
 
  This software is released under the MIT License, see LICENSE.   
  
