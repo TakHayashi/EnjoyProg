@@ -1,4 +1,5 @@
-﻿#sud_S2.py
+#sud_S2.py
+#sinple DF recursive solver with fast return
 import sys
 from os.path import basename
 
@@ -6,6 +7,10 @@ from swatch import startwatch
 from sudq_common import v
 
 def solve(v,n):#depth first recursive solver
+    """
+    v : 9 x 9 sudoku problem input and over write result on v
+    n : starting point 
+    """
     #internal function for solve
     def check(v, r, c, i):#chack related cells( row, column, block)
          return row(v, r, i) and column(v, c, i) and block(v, r,c, i)
