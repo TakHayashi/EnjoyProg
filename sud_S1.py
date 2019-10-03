@@ -1,5 +1,5 @@
 #sud_S1.py
-#usage: just run this script. require sudq_common.py in same dir.
+#usage: just run this script. sudq_common.py required in same dir.
 #file in github
 import sys
 from os.path import basename
@@ -8,6 +8,11 @@ from time import perf_counter
 from sudq_common import v
 
 def solve(v,n,pr=False):#depth first recursive solver
+    """
+    v : 9 x 9 list of list as sudoku problem.
+    n : start cell-index (0=< n <=80)
+    pr : True: When solution found,  print result in this function.
+    """
     #---begin internal function
     def check(v, r, c, i):#check related cells( row, column, block)
         return row(v, r, i) and column(v, c, i) and block(v, r,c, i) 
@@ -49,7 +54,7 @@ if __name__=='__main__' :
     print(fn)
 
     vsave=[[v[i][j] for j in range(9)]for i in range(9)]
-    rpt=7 #repeat counter for statistic of execution time
+    rpt=7 #repeat counter for precise execution time
     
     rc=0 #recursion counter (global) 
     t=perf_counter()
