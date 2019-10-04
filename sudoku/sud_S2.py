@@ -2,7 +2,8 @@
 #by TakHayashi
 #simple Depth-first recursive solver.
 # if found 1st solution, solve() terminates to search.
-#usage: just run this script. sudq_common.py required in same dir.
+#usage: just run this script.
+#requirement: sudq_common.py , swatch.py required in same directory.
 #file in github/TakHayashi/sudoku
 import sys
 from os.path import basename
