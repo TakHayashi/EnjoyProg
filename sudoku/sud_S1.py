@@ -1,6 +1,10 @@
 #sud_S1.py
-#usage: just run this script. sudq_common.py required in same dir.
-#file in github/TakHayashi
+#by TakHayashi
+#simple Depth-first recursive solver with fast return
+# after traverse all possible node in tree, solve() terminate.
+#usage: just run this script.
+#file required: sudq_common.py  in same dir.
+#file in github/TakHayashi/sudoku
 import sys
 from os.path import basename
 
@@ -9,9 +13,9 @@ from sudq_common import v
 
 def solve(v,n,pr=False):#depth first recursive solver
     """
-    v : 9 x 9 list of list as sudoku problem.
-    n : start cell-index (0=< n <=80)
-    pr : True: When solution found,  print result in this function.
+    v : 9 x 9 sudoku problem input and over write result on v
+    n : start cell-index (0=< n <=80).  but 0 expected
+    pr : True: Whenever solution found, print result IN this function.
     """
     #---begin internal function
     def check(v, r, c, i):#check related cells( row, column, block)
