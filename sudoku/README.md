@@ -1,13 +1,14 @@
-## Various Sudoku Solver Programs  
-### Description  
+### Various Sudoku Solver Programs  
+#### Description:  
  More than 10 small Sudoku solver Python programs I wrote for years.  
- Execution time improvement in Python version.  
- One Python simple version is ported to 7 languages:  
+ Performance improvement in Python version.( around x 300)  
+ Also solvers in 7 languages source code,  
  C, C#, JS, Ruby, Lisp1.5, Scheme(now Racket), Haskell.   
+   Each one is equivalent to most simple  version of Python.  
+#### Usage: see comment in source code    
 
-### To be uploaded soon.    
+#### To be uploaded soon.    
 
-### License  
-
+#### License  
  This software is released under the MIT License, see LICENSE.   
  
