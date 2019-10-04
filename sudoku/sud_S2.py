@@ -1,5 +1,9 @@
 ﻿#sud_S2.py
-#sinple Depth-first recursive solver with fast return
+#by TakHayashi
+#simple Depth-first recursive solver.
+# if found 1st solution, solve() terminates to search.
+#usage: just run this script. sudq_common.py required in same dir.
+#file in github/TakHayashi/sudoku
 import sys
 from os.path import basename
 
@@ -9,7 +13,7 @@ from sudq_common import v
 def solve(v,n):#depth first recursive solver
     """
     v : 9 x 9 sudoku problem input and over write result on v
-    n : starting point 
+    n : start cell-index (0=< n <=80). but 0 expected.
     """
     #internal function for solve
     def check(v, r, c, i):#chack related cells( row, column, block)
@@ -33,7 +37,7 @@ def solve(v,n):#depth first recursive solver
 ##        t=lap('5.3f')[0]
 ##        for i in range(9):print(v[i])  #print solution
 ##        print('found: '+t+'s',f' call cnt={rc:,} return cnt={rr:,}')
-        return True#search remainig solutions
+        return True
     for i in range(1,10):  #try 1 - 9
         if check(v,r,c,i):   #possible to place?
            v[r][c] = i     #place it
