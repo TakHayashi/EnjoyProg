@@ -1,7 +1,7 @@
 #swatch.py
 #by TakHayashi
 #execution time measurement module by closure.
-#usage: see #for test in __main__
+#usage: see test code in __main__ of this.
 from time import perf_counter,time,process_time
 #don't use process_time : resolution > 16ms
 def startwatch():
