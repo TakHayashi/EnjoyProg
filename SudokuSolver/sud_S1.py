@@ -28,11 +28,11 @@ def solve(v,n,pr=False):#depth first recursive solver
         if v[r][c] == 0:break
         n+=1
     if n >=81: # finished?
-       if pr:
-         t1=perf_counter()-t
-         for i in range(9):print(v[i])  #print solution
-         print('found:','{:5.3f}'.format(t1)+'s','rc=','{:,d}'.format(rc))
-       return #finished
+        t1=perf_counter()-t
+        if pr:
+            for i in range(9):print(v[i])  #print solution
+        print('found:','{:5.3f}'.format(t1)+'s','rc=','{:,d}'.format(rc),end='')
+        return #finished
     for i in range(1,10):  #try 1 - 9
         if check(v,r,c,i):   #possible to place?
            v[r][c] = i     #place it
@@ -58,7 +58,7 @@ if __name__=='__main__' :
     tsum=0
     tav=0
     tmin=9999
-    print('t=',end='')
+    print('t=')
     for i in range(rpt):
        rc=0 
        v=[[vsave[i][j] for j in range(9)]for i in range(9)]
@@ -67,7 +67,7 @@ if __name__=='__main__' :
        t=perf_counter()-t
        tsum+=t
        tav=tsum/(i+1)
-       print(f' {t:5.3f}',end='')
+       print(f' ret={t:5.3f}s')
        if t<tmin :tmin=t       
-    print(f'\nTmin={tmin:5.3f} Tav={tav:5.3f} rpt= {rpt:d} \n')  
+    print(f'\nTmin={tmin:5.3f}s Tav={tav:5.3f}s rpt= {rpt:d} \n')  
     for i in range(9):print(v[i]) #confirm v initialized 
