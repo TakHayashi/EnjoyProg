@@ -1,10 +1,10 @@
-## Sudoku solvers, neural NW and test codes for programming topics.  
+## Number Place solvers, neural NW and test codes for programming topics.  
 ### Description  
- 1.More than 10 small Sudoku solver programs I wrote for years.  
+ 1.Number place solver programs I wrote for years.  
    Execution time improvement in Python version.  
-   One Python simple version is ported to 7 languages:  
-   C, C#, JS, Ruby, Lisp1.5, Scheme(now Racket), Haskell.   
-   SudokuSolver folder.
+   One Python simple version is ported to 8 languages:  
+   C, C#, JS, Julia, Ruby, Lisp1.5, Scheme(now Racket), Haskell.   
+   Refer 'solver' folder.
   
  2.Try Neural NW to confirm training and prediction.  
    in TryAI folder.
