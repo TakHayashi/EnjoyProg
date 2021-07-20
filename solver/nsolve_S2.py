@@ -4,7 +4,7 @@
 import sys
 from os.path import basename
 from swatch import startwatch
-from sudq_common import v
+from nsolve_common import v
 
 def solve(v, n):# depth first recursive solver
     #internal functions for solve
